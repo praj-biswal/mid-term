@@ -1,0 +1,440 @@
+{
+    "SecurityGroups": [
+        {
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1", 
+                    "PrefixListIds": [], 
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ], 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "Description": "midtermwebsg 2021-03-16T19:00:16.903-05:00", 
+            "IpPermissions": [
+                {
+                    "PrefixListIds": [], 
+                    "FromPort": 80, 
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ], 
+                    "ToPort": 80, 
+                    "IpProtocol": "tcp", 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": []
+                }, 
+                {
+                    "PrefixListIds": [], 
+                    "FromPort": 22, 
+                    "IpRanges": [
+                        {
+                            "Description": "", 
+                            "CidrIp": "74.32.186.23/32"
+                        }
+                    ], 
+                    "ToPort": 22, 
+                    "IpProtocol": "tcp", 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "GroupName": "midtermweb-sg", 
+            "VpcId": "vpc-03e3932a55c95ab4a", 
+            "OwnerId": "964293755055", 
+            "GroupId": "sg-00360ca576739e1c2"
+        }, 
+        {
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1", 
+                    "PrefixListIds": [], 
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ], 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "Description": "Created by RDS management console", 
+            "Tags": [
+                {
+                    "Value": "ecodb-sg", 
+                    "Key": "Name"
+                }
+            ], 
+            "IpPermissions": [
+                {
+                    "PrefixListIds": [], 
+                    "FromPort": 3306, 
+                    "IpRanges": [
+                        {
+                            "CidrIp": "10.25.0.0/16"
+                        }
+                    ], 
+                    "ToPort": 3306, 
+                    "IpProtocol": "tcp", 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "GroupName": "ecodb-sg", 
+            "VpcId": "vpc-048ddc0466147461e", 
+            "OwnerId": "964293755055", 
+            "GroupId": "sg-04069a4e0369b5f9d"
+        }, 
+        {
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1", 
+                    "PrefixListIds": [], 
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ], 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "Description": "Open port 80 2021-03-12T00:36:29.880-06:00", 
+            "Tags": [
+                {
+                    "Value": "ecoweb-sg", 
+                    "Key": "Name"
+                }
+            ], 
+            "IpPermissions": [
+                {
+                    "PrefixListIds": [], 
+                    "FromPort": 80, 
+                    "IpRanges": [
+                        {
+                            "Description": "", 
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ], 
+                    "ToPort": 80, 
+                    "IpProtocol": "tcp", 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": []
+                }, 
+                {
+                    "PrefixListIds": [], 
+                    "FromPort": 22, 
+                    "IpRanges": [
+                        {
+                            "CidrIp": "74.32.186.23/32"
+                        }
+                    ], 
+                    "ToPort": 22, 
+                    "IpProtocol": "tcp", 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "GroupName": "ecoweb-sg", 
+            "VpcId": "vpc-048ddc0466147461e", 
+            "OwnerId": "964293755055", 
+            "GroupId": "sg-0449ebe04d517be76"
+        }, 
+        {
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1", 
+                    "PrefixListIds": [], 
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ], 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "Description": "SSH port22 2021-03-11T21:20:52.975-06:00", 
+            "IpPermissions": [
+                {
+                    "PrefixListIds": [], 
+                    "FromPort": 22, 
+                    "IpRanges": [
+                        {
+                            "Description": "", 
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ], 
+                    "ToPort": 22, 
+                    "IpProtocol": "tcp", 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "GroupName": "SSH", 
+            "VpcId": "vpc-515af72c", 
+            "OwnerId": "964293755055", 
+            "GroupId": "sg-0571f0bad43edc7e1"
+        }, 
+        {
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1", 
+                    "PrefixListIds": [], 
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ], 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "Description": "Open port 22 2021-03-12T00:49:20.516-06:00", 
+            "IpPermissions": [
+                {
+                    "PrefixListIds": [], 
+                    "FromPort": 22, 
+                    "IpRanges": [
+                        {
+                            "Description": "", 
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ], 
+                    "ToPort": 22, 
+                    "IpProtocol": "tcp", 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": [
+                        {
+                            "CidrIpv6": "::/0", 
+                            "Description": ""
+                        }
+                    ]
+                }
+            ], 
+            "GroupName": "SSH", 
+            "VpcId": "vpc-048ddc0466147461e", 
+            "OwnerId": "964293755055", 
+            "GroupId": "sg-077b8db48b86acc1f"
+        }, 
+        {
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1", 
+                    "PrefixListIds": [], 
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ], 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "Description": "default VPC security group", 
+            "IpPermissions": [
+                {
+                    "IpProtocol": "-1", 
+                    "PrefixListIds": [], 
+                    "IpRanges": [], 
+                    "UserIdGroupPairs": [
+                        {
+                            "UserId": "964293755055", 
+                            "GroupId": "sg-0b8e501681c08bc56"
+                        }
+                    ], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "GroupName": "default", 
+            "VpcId": "vpc-03e3932a55c95ab4a", 
+            "OwnerId": "964293755055", 
+            "GroupId": "sg-0b8e501681c08bc56"
+        }, 
+        {
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1", 
+                    "PrefixListIds": [], 
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ], 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "Description": "launch-wizard-1 created 2021-02-09T19:21:26.119-06:00", 
+            "IpPermissions": [
+                {
+                    "PrefixListIds": [], 
+                    "FromPort": 22, 
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ], 
+                    "ToPort": 22, 
+                    "IpProtocol": "tcp", 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "GroupName": "launch-wizard-1", 
+            "VpcId": "vpc-515af72c", 
+            "OwnerId": "964293755055", 
+            "GroupId": "sg-0db735d9060419460"
+        }, 
+        {
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1", 
+                    "PrefixListIds": [], 
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ], 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "Description": "Created by RDS management console", 
+            "IpPermissions": [
+                {
+                    "PrefixListIds": [], 
+                    "FromPort": 3306, 
+                    "IpRanges": [], 
+                    "ToPort": 3306, 
+                    "IpProtocol": "tcp", 
+                    "UserIdGroupPairs": [
+                        {
+                            "UserId": "964293755055", 
+                            "GroupId": "sg-00360ca576739e1c2"
+                        }
+                    ], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "GroupName": "midtermdb-sg", 
+            "VpcId": "vpc-03e3932a55c95ab4a", 
+            "OwnerId": "964293755055", 
+            "GroupId": "sg-0db7a0348fc98445d"
+        }, 
+        {
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1", 
+                    "PrefixListIds": [], 
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ], 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "Description": "launch-wizard-2 created 2021-02-16T20:07:14.658-06:00", 
+            "IpPermissions": [
+                {
+                    "PrefixListIds": [], 
+                    "FromPort": 22, 
+                    "IpRanges": [
+                        {
+                            "Description": "", 
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ], 
+                    "ToPort": 22, 
+                    "IpProtocol": "tcp", 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": [
+                        {
+                            "CidrIpv6": "::/0", 
+                            "Description": ""
+                        }
+                    ]
+                }
+            ], 
+            "GroupName": "launch-wizard-2", 
+            "VpcId": "vpc-515af72c", 
+            "OwnerId": "964293755055", 
+            "GroupId": "sg-0e4ce7e6a80860e2d"
+        }, 
+        {
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1", 
+                    "PrefixListIds": [], 
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ], 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "Description": "default VPC security group", 
+            "IpPermissions": [
+                {
+                    "IpProtocol": "-1", 
+                    "PrefixListIds": [], 
+                    "IpRanges": [], 
+                    "UserIdGroupPairs": [
+                        {
+                            "UserId": "964293755055", 
+                            "GroupId": "sg-0eec0f6762dafe593"
+                        }
+                    ], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "GroupName": "default", 
+            "VpcId": "vpc-048ddc0466147461e", 
+            "OwnerId": "964293755055", 
+            "GroupId": "sg-0eec0f6762dafe593"
+        }, 
+        {
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1", 
+                    "PrefixListIds": [], 
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ], 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "Description": "default VPC security group", 
+            "IpPermissions": [
+                {
+                    "IpProtocol": "-1", 
+                    "PrefixListIds": [], 
+                    "IpRanges": [], 
+                    "UserIdGroupPairs": [
+                        {
+                            "UserId": "964293755055", 
+                            "GroupId": "sg-f7c707fd"
+                        }
+                    ], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "GroupName": "default", 
+            "VpcId": "vpc-515af72c", 
+            "OwnerId": "964293755055", 
+            "GroupId": "sg-f7c707fd"
+        }
+    ]
+}

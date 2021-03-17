@@ -1,0 +1,238 @@
+{
+    "Subnets": [
+        {
+            "MapPublicIpOnLaunch": true, 
+            "AvailabilityZoneId": "use1-az4", 
+            "Tags": [
+                {
+                    "Value": "midterm-public2", 
+                    "Key": "Name"
+                }, 
+                {
+                    "Value": "midterm-public2", 
+                    "Key": "Lab"
+                }
+            ], 
+            "AvailableIpAddressCount": 121, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:us-east-1:964293755055:subnet/subnet-04d1e36024b331040", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-03e3932a55c95ab4a", 
+            "MapCustomerOwnedIpOnLaunch": false, 
+            "AvailabilityZone": "us-east-1b", 
+            "SubnetId": "subnet-04d1e36024b331040", 
+            "OwnerId": "964293755055", 
+            "CidrBlock": "10.25.2.0/25", 
+            "State": "available", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": false, 
+            "AvailabilityZoneId": "use1-az2", 
+            "Tags": [
+                {
+                    "Value": "midterm-private1", 
+                    "Key": "Name"
+                }, 
+                {
+                    "Value": "midterm-private1", 
+                    "Key": "Lab"
+                }
+            ], 
+            "AvailableIpAddressCount": 250, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:us-east-1:964293755055:subnet/subnet-0d0b1f46bf19a1482", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-03e3932a55c95ab4a", 
+            "MapCustomerOwnedIpOnLaunch": false, 
+            "AvailabilityZone": "us-east-1a", 
+            "SubnetId": "subnet-0d0b1f46bf19a1482", 
+            "OwnerId": "964293755055", 
+            "CidrBlock": "10.25.3.0/24", 
+            "State": "available", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": true, 
+            "AvailabilityZoneId": "use1-az2", 
+            "Tags": [
+                {
+                    "Value": "midterm-public1", 
+                    "Key": "Name"
+                }, 
+                {
+                    "Value": "midterm-public1", 
+                    "Key": "Lab"
+                }
+            ], 
+            "AvailableIpAddressCount": 248, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:us-east-1:964293755055:subnet/subnet-05b5530ad2b054dc6", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-03e3932a55c95ab4a", 
+            "MapCustomerOwnedIpOnLaunch": false, 
+            "AvailabilityZone": "us-east-1a", 
+            "SubnetId": "subnet-05b5530ad2b054dc6", 
+            "OwnerId": "964293755055", 
+            "CidrBlock": "10.25.1.0/24", 
+            "State": "available", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": true, 
+            "AvailabilityZoneId": "use1-az2", 
+            "Tags": [
+                {
+                    "Value": "ecotech-public1", 
+                    "Key": "Name"
+                }, 
+                {
+                    "Value": "public1", 
+                    "Key": "LAB"
+                }
+            ], 
+            "AvailableIpAddressCount": 247, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:us-east-1:964293755055:subnet/subnet-0f6d3a859755a8a7c", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-048ddc0466147461e", 
+            "MapCustomerOwnedIpOnLaunch": false, 
+            "AvailabilityZone": "us-east-1a", 
+            "SubnetId": "subnet-0f6d3a859755a8a7c", 
+            "OwnerId": "964293755055", 
+            "CidrBlock": "10.25.1.0/24", 
+            "State": "available", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": true, 
+            "AvailabilityZoneId": "use1-az4", 
+            "Tags": [
+                {
+                    "Value": "public2", 
+                    "Key": "LAB"
+                }, 
+                {
+                    "Value": "ecotech-public2", 
+                    "Key": "Name"
+                }
+            ], 
+            "AvailableIpAddressCount": 249, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:us-east-1:964293755055:subnet/subnet-026f91b7480e6b3fa", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-048ddc0466147461e", 
+            "MapCustomerOwnedIpOnLaunch": false, 
+            "AvailabilityZone": "us-east-1b", 
+            "SubnetId": "subnet-026f91b7480e6b3fa", 
+            "OwnerId": "964293755055", 
+            "CidrBlock": "10.25.2.0/24", 
+            "State": "available", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": false, 
+            "AvailabilityZoneId": "use1-az2", 
+            "Tags": [
+                {
+                    "Value": "Default", 
+                    "Key": "Name"
+                }, 
+                {
+                    "Value": "VPC", 
+                    "Key": "Lab"
+                }
+            ], 
+            "AvailableIpAddressCount": 65531, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:us-east-1:964293755055:subnet/subnet-00239a7ca88aa612a", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-515af72c", 
+            "MapCustomerOwnedIpOnLaunch": false, 
+            "AvailabilityZone": "us-east-1a", 
+            "SubnetId": "subnet-00239a7ca88aa612a", 
+            "OwnerId": "964293755055", 
+            "CidrBlock": "172.31.0.0/16", 
+            "State": "available", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": false, 
+            "AvailabilityZoneId": "use1-az1", 
+            "Tags": [
+                {
+                    "Value": "private2", 
+                    "Key": "LAB"
+                }, 
+                {
+                    "Value": "ecotech-private2", 
+                    "Key": "Name"
+                }
+            ], 
+            "AvailableIpAddressCount": 250, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:us-east-1:964293755055:subnet/subnet-00009db4f90defe96", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-048ddc0466147461e", 
+            "MapCustomerOwnedIpOnLaunch": false, 
+            "AvailabilityZone": "us-east-1d", 
+            "SubnetId": "subnet-00009db4f90defe96", 
+            "OwnerId": "964293755055", 
+            "CidrBlock": "10.25.4.0/24", 
+            "State": "available", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": false, 
+            "AvailabilityZoneId": "use1-az4", 
+            "Tags": [
+                {
+                    "Value": "midterm-private2", 
+                    "Key": "Lab"
+                }, 
+                {
+                    "Value": "midterm-private2", 
+                    "Key": "Name"
+                }
+            ], 
+            "AvailableIpAddressCount": 251, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:us-east-1:964293755055:subnet/subnet-07a3f654b60350c26", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-03e3932a55c95ab4a", 
+            "MapCustomerOwnedIpOnLaunch": false, 
+            "AvailabilityZone": "us-east-1b", 
+            "SubnetId": "subnet-07a3f654b60350c26", 
+            "OwnerId": "964293755055", 
+            "CidrBlock": "10.25.4.0/24", 
+            "State": "available", 
+            "AssignIpv6AddressOnCreation": false
+        }, 
+        {
+            "MapPublicIpOnLaunch": false, 
+            "AvailabilityZoneId": "use1-az6", 
+            "Tags": [
+                {
+                    "Value": "ecotech-private1", 
+                    "Key": "Name"
+                }, 
+                {
+                    "Value": "private1", 
+                    "Key": "LAB"
+                }
+            ], 
+            "AvailableIpAddressCount": 251, 
+            "DefaultForAz": false, 
+            "SubnetArn": "arn:aws:ec2:us-east-1:964293755055:subnet/subnet-014a5b86217fc73f5", 
+            "Ipv6CidrBlockAssociationSet": [], 
+            "VpcId": "vpc-048ddc0466147461e", 
+            "MapCustomerOwnedIpOnLaunch": false, 
+            "AvailabilityZone": "us-east-1c", 
+            "SubnetId": "subnet-014a5b86217fc73f5", 
+            "OwnerId": "964293755055", 
+            "CidrBlock": "10.25.3.0/24", 
+            "State": "available", 
+            "AssignIpv6AddressOnCreation": false
+        }
+    ]
+}

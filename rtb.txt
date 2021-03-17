@@ -1,0 +1,261 @@
+{
+    "RouteTables": [
+        {
+            "Associations": [
+                {
+                    "SubnetId": "subnet-04d1e36024b331040", 
+                    "AssociationState": {
+                        "State": "associated"
+                    }, 
+                    "RouteTableAssociationId": "rtbassoc-050393ad049b14aad", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-0d37f1ca650a252d9"
+                }, 
+                {
+                    "SubnetId": "subnet-05b5530ad2b054dc6", 
+                    "AssociationState": {
+                        "State": "associated"
+                    }, 
+                    "RouteTableAssociationId": "rtbassoc-09b0d1fdccafbcd20", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-0d37f1ca650a252d9"
+                }
+            ], 
+            "RouteTableId": "rtb-0d37f1ca650a252d9", 
+            "VpcId": "vpc-03e3932a55c95ab4a", 
+            "PropagatingVgws": [], 
+            "Tags": [
+                {
+                    "Value": "midterm-rtb-public", 
+                    "Key": "Name"
+                }
+            ], 
+            "Routes": [
+                {
+                    "GatewayId": "local", 
+                    "DestinationCidrBlock": "10.25.0.0/16", 
+                    "State": "active", 
+                    "Origin": "CreateRouteTable"
+                }, 
+                {
+                    "GatewayId": "igw-077e9b1bb4433ccd8", 
+                    "DestinationCidrBlock": "0.0.0.0/0", 
+                    "State": "active", 
+                    "Origin": "CreateRoute"
+                }
+            ], 
+            "OwnerId": "964293755055"
+        }, 
+        {
+            "Associations": [
+                {
+                    "AssociationState": {
+                        "State": "associated"
+                    }, 
+                    "RouteTableAssociationId": "rtbassoc-068e26da4006f89cc", 
+                    "Main": true, 
+                    "RouteTableId": "rtb-08d7838c50acf311e"
+                }, 
+                {
+                    "SubnetId": "subnet-026f91b7480e6b3fa", 
+                    "AssociationState": {
+                        "State": "associated"
+                    }, 
+                    "RouteTableAssociationId": "rtbassoc-04193426fea411f43", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-08d7838c50acf311e"
+                }, 
+                {
+                    "SubnetId": "subnet-0f6d3a859755a8a7c", 
+                    "AssociationState": {
+                        "State": "associated"
+                    }, 
+                    "RouteTableAssociationId": "rtbassoc-04ca63001a6f0bb06", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-08d7838c50acf311e"
+                }
+            ], 
+            "RouteTableId": "rtb-08d7838c50acf311e", 
+            "VpcId": "vpc-048ddc0466147461e", 
+            "PropagatingVgws": [], 
+            "Tags": [
+                {
+                    "Value": "ecotech-rtb-public", 
+                    "Key": "Name"
+                }
+            ], 
+            "Routes": [
+                {
+                    "GatewayId": "local", 
+                    "DestinationCidrBlock": "10.25.0.0/16", 
+                    "State": "active", 
+                    "Origin": "CreateRouteTable"
+                }, 
+                {
+                    "GatewayId": "igw-09b1afe076e866246", 
+                    "DestinationCidrBlock": "0.0.0.0/0", 
+                    "State": "active", 
+                    "Origin": "CreateRoute"
+                }
+            ], 
+            "OwnerId": "964293755055"
+        }, 
+        {
+            "Associations": [
+                {
+                    "AssociationState": {
+                        "State": "associated"
+                    }, 
+                    "RouteTableAssociationId": "rtbassoc-dd4ad2ac", 
+                    "Main": true, 
+                    "RouteTableId": "rtb-41cbe33f"
+                }
+            ], 
+            "RouteTableId": "rtb-41cbe33f", 
+            "VpcId": "vpc-515af72c", 
+            "PropagatingVgws": [], 
+            "Tags": [
+                {
+                    "Value": "default-main-rtb", 
+                    "Key": "Name"
+                }
+            ], 
+            "Routes": [
+                {
+                    "GatewayId": "local", 
+                    "DestinationCidrBlock": "172.31.0.0/16", 
+                    "State": "active", 
+                    "Origin": "CreateRouteTable"
+                }, 
+                {
+                    "GatewayId": "igw-48f4e433", 
+                    "DestinationCidrBlock": "0.0.0.0/0", 
+                    "State": "active", 
+                    "Origin": "CreateRoute"
+                }
+            ], 
+            "OwnerId": "964293755055"
+        }, 
+        {
+            "Associations": [
+                {
+                    "SubnetId": "subnet-014a5b86217fc73f5", 
+                    "AssociationState": {
+                        "State": "associated"
+                    }, 
+                    "RouteTableAssociationId": "rtbassoc-0192019fb535d804d", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-0f8d9adad14ebdf9d"
+                }, 
+                {
+                    "SubnetId": "subnet-00009db4f90defe96", 
+                    "AssociationState": {
+                        "State": "associated"
+                    }, 
+                    "RouteTableAssociationId": "rtbassoc-0ab807de3f2f7cdba", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-0f8d9adad14ebdf9d"
+                }
+            ], 
+            "RouteTableId": "rtb-0f8d9adad14ebdf9d", 
+            "VpcId": "vpc-048ddc0466147461e", 
+            "PropagatingVgws": [], 
+            "Tags": [
+                {
+                    "Value": "ecotech-rtb-private", 
+                    "Key": "Name"
+                }, 
+                {
+                    "Value": "ecotech-vpc", 
+                    "Key": "LAB"
+                }
+            ], 
+            "Routes": [
+                {
+                    "GatewayId": "local", 
+                    "DestinationCidrBlock": "10.25.0.0/16", 
+                    "State": "active", 
+                    "Origin": "CreateRouteTable"
+                }, 
+                {
+                    "Origin": "CreateRoute", 
+                    "DestinationCidrBlock": "0.0.0.0/0", 
+                    "NatGatewayId": "nat-0861b2747597e529c", 
+                    "State": "active"
+                }
+            ], 
+            "OwnerId": "964293755055"
+        }, 
+        {
+            "Associations": [
+                {
+                    "AssociationState": {
+                        "State": "associated"
+                    }, 
+                    "RouteTableAssociationId": "rtbassoc-0697b04411cb87f85", 
+                    "Main": true, 
+                    "RouteTableId": "rtb-0fe9186d5906c3368"
+                }
+            ], 
+            "RouteTableId": "rtb-0fe9186d5906c3368", 
+            "VpcId": "vpc-03e3932a55c95ab4a", 
+            "PropagatingVgws": [], 
+            "Tags": [], 
+            "Routes": [
+                {
+                    "GatewayId": "local", 
+                    "DestinationCidrBlock": "10.25.0.0/16", 
+                    "State": "active", 
+                    "Origin": "CreateRouteTable"
+                }
+            ], 
+            "OwnerId": "964293755055"
+        }, 
+        {
+            "Associations": [
+                {
+                    "SubnetId": "subnet-07a3f654b60350c26", 
+                    "AssociationState": {
+                        "State": "associated"
+                    }, 
+                    "RouteTableAssociationId": "rtbassoc-069a7fcb96cf37cf2", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-0e065c48bdf931adf"
+                }, 
+                {
+                    "SubnetId": "subnet-0d0b1f46bf19a1482", 
+                    "AssociationState": {
+                        "State": "associated"
+                    }, 
+                    "RouteTableAssociationId": "rtbassoc-06ae26099fcfcdaef", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-0e065c48bdf931adf"
+                }
+            ], 
+            "RouteTableId": "rtb-0e065c48bdf931adf", 
+            "VpcId": "vpc-03e3932a55c95ab4a", 
+            "PropagatingVgws": [], 
+            "Tags": [
+                {
+                    "Value": "midterm-rtb-private", 
+                    "Key": "Name"
+                }
+            ], 
+            "Routes": [
+                {
+                    "GatewayId": "local", 
+                    "DestinationCidrBlock": "10.25.0.0/16", 
+                    "State": "active", 
+                    "Origin": "CreateRouteTable"
+                }, 
+                {
+                    "Origin": "CreateRoute", 
+                    "DestinationCidrBlock": "0.0.0.0/0", 
+                    "NatGatewayId": "nat-065c4ed8b9a45d0ab", 
+                    "State": "active"
+                }
+            ], 
+            "OwnerId": "964293755055"
+        }
+    ]
+}

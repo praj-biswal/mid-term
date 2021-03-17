@@ -1,0 +1,84 @@
+{
+    "Vpcs": [
+        {
+            "VpcId": "vpc-03e3932a55c95ab4a", 
+            "InstanceTenancy": "default", 
+            "Tags": [
+                {
+                    "Value": "midterm-vpc", 
+                    "Key": "LAB"
+                }, 
+                {
+                    "Value": "midterm-vpc", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-0a720df44b439a554", 
+                    "CidrBlock": "10.25.0.0/16", 
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ], 
+            "State": "available", 
+            "DhcpOptionsId": "dopt-5099d72a", 
+            "OwnerId": "964293755055", 
+            "CidrBlock": "10.25.0.0/16", 
+            "IsDefault": false
+        }, 
+        {
+            "VpcId": "vpc-515af72c", 
+            "InstanceTenancy": "default", 
+            "Tags": [
+                {
+                    "Value": "Default", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-db1fa1b4", 
+                    "CidrBlock": "172.31.0.0/16", 
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ], 
+            "State": "available", 
+            "DhcpOptionsId": "dopt-5099d72a", 
+            "OwnerId": "964293755055", 
+            "CidrBlock": "172.31.0.0/16", 
+            "IsDefault": true
+        }, 
+        {
+            "VpcId": "vpc-048ddc0466147461e", 
+            "InstanceTenancy": "default", 
+            "Tags": [
+                {
+                    "Value": "VPC", 
+                    "Key": "LAB"
+                }, 
+                {
+                    "Value": "ecotech-vpc", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-04c64f4dd404ea2c0", 
+                    "CidrBlock": "10.25.0.0/16", 
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ], 
+            "State": "available", 
+            "DhcpOptionsId": "dopt-5099d72a", 
+            "OwnerId": "964293755055", 
+            "CidrBlock": "10.25.0.0/16", 
+            "IsDefault": false
+        }
+    ]
+}
